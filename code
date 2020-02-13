@@ -3,7 +3,7 @@ import math
 arraySize = int(raw_input())
 list1 = []
 
-list1 = list(map(int, raw_input().split()))
+list1 = map(int, raw_input().strip().split())
 
 meanSum = 0
 
