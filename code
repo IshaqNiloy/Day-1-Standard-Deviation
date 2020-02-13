@@ -1,0 +1,22 @@
+import math
+
+arraySize = int(raw_input())
+list1 = []
+
+list1 = list(map(int, raw_input().split()))
+
+meanSum = 0
+
+for item in list1:
+    meanSum += item
+
+mean = meanSum / arraySize
+
+standardDeviationSum = 0
+
+for item in list1:
+    standardDeviationSum += (item - mean)**2
+
+standardDeviation = math.sqrt(standardDeviationSum / arraySize)
+
+print(round(standardDeviation,1))
